@@ -33,9 +33,40 @@ h1 {
 
   .food img {
     width: 100%;
+    
   }
 
   .column-inner {
     padding: 20px;
   }
+
+  @media (max-width: 700px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  .column-70 {
+    width: 70%;
+    float: left;
+    height: 500px;
+  }
+  
+  .column-30 {
+    width: 30%;
+    float: left;
+    height: 500px;
+  }
+  
+  .row:before {
+    display: table;
+    content: "";
+  }
+  
+  .row:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+
   
